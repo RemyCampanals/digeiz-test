@@ -1,0 +1,30 @@
+// RESET ----
+@import "./tools/normalize"
+
+// UTILS ----
+@import "./tools/variables"
+@import "./tools/mixins"
+
+// LAYOUT ----
+@import "./modules/layout"
+
+#root
+    min-height: 100vh
+
+body
+    background-color: #0c1013
+    color: white
+
+.wrapper
+    padding: 0 8px
+
+h1
+    text-align: center
+
+svg
+    width: 75%
+    height: auto
+    margin: 0 auto
+    display: block
+    @include breakpoint(mobile)
+        width: 100%

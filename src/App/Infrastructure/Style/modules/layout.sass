@@ -1,0 +1,31 @@
+.layout
+    height: auto
+    min-height: 100vh
+    flex-direction: column
+    display: flex
+    &--header
+        background-color: #171e23
+        flex-grow: 0
+        padding: 8px
+        align-items: flex-start
+        flex-direction: column
+        display: flex
+        @include breakpoint(mobile)
+            align-items: center
+        &-brand-name
+            width: auto
+            font-size: 18px
+    &--content
+        height: auto
+        overflow-y: auto
+        overflow-x: hidden
+        flex-grow: 1
+    &--footer
+        font-size: 11px
+        color: rgba(255, 255, 255, .4)
+        background-color: #171e23
+        padding: 8px
+        flex-grow: 0
+        align-items: center
+        flex-direction: column
+        display: flex
